@@ -11,13 +11,13 @@
 #' @export
 #'
 #' @examples
-#' is_less_than_0(-1)
+#' less_than_zero(-1)
 #' [1] TRUE
-#' is_less_than_0(10)
+#' less_than_zero(10)
 #' [1] FALSE
-#' is_less_than_0(c(-1,0,1,2,3,4))
+#' less_than_zero(c(-1,0,1,2,3,4))
 #' [1] TRUE FALSE FALSE FALSE FALSE FALSE
-is_less_than_0 <- function(x) {
+less_than_zero <- function(x) {
 
 }
 
