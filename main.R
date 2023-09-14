@@ -76,10 +76,10 @@ rm_na <- function(x) {
 #'
 #' @examples
 #' m <- matrix(1:9, nrow=3, byrow=T)
-#' row_mins(m)
-#' [1] 1 4 7
+#' row_medians(m)
+#' [1] 2 5 8
 #' 
-row_mins <- function(x) {
+row_medians <- function(x) {
 
 }
 
