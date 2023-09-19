@@ -11,19 +11,19 @@
 #' @export
 #'
 #' @examples
-#' less_than_zero(-1)
+#' is_less_than_0(-1)
 #' [1] TRUE
-#' less_than_zero(10)
+#' is_less_than_0(10)
 #' [1] FALSE
-#' less_than_zero(c(-1,0,1,2,3,4))
+#' is_less_than_0(c(-1,0,1,2,3,4))
 #' [1] TRUE FALSE FALSE FALSE FALSE FALSE
-less_than_zero <- function(x) {
+is_less_than_0 <- function(x) {
 
 }
 
 #' Evaluate whether the argument is between two numbers
 #'
-#' Returns TRUE if the numeric argument x is contained within the closed interval
+#' Returns TRUE if the numeric argument x is contained within the open interval
 #' (a, b), otherwise return FALSE.
 #'
 #' @param x (numeric): the numeric value(s) to test
@@ -76,10 +76,10 @@ rm_na <- function(x) {
 #'
 #' @examples
 #' m <- matrix(1:9, nrow=3, byrow=T)
-#' row_medians(m)
-#' [1] 2 5 8
+#' row_mins(m)
+#' [1] 1 4 7
 #' 
-row_medians <- function(x) {
+row_mins <- function(x) {
 
 }
 
@@ -146,38 +146,4 @@ summarize_rows <- function(x, fn, na.rm=FALSE) {
 #' 4  0.09518138 1.030461  0.11294781 -3.409049 2.544992       90              72      0
 summarize_matrix <- function(x, na.rm=FALSE) {
 
-}
-
-# ------------ Helper Functions Used By Assignment, You May Ignore ------------
-sample_normal <- function(n, mean=0, sd=1) {
-  set.seed(1337)
-  samples <- rnorm(n, mean=mean, sd=sd)
-  return(samples)
-}
-
-sample_normal_w_missing <- function(n, mean=0, sd=1, missing_frac=0.1) {
-  set.seed(1337)
-  samples <- rnorm(n, mean=mean, sd=sd)
-  missing <- rbinom(length(samples), 1, missing_frac)==1
-  samples[missing] <- NA
-  return(samples)
-}
-
-simulate_gene_expression <- function(num_samples, num_genes) {
-  set.seed(1337)
-  gene_exp <- matrix(
-    rnbinom(num_samples*num_genes, rlnorm(num_genes,meanlog = 3), prob=runif(num_genes)),
-    nrow=num_genes
-  )
-  return(gene_exp)
-}
-
-simulate_gene_expression_w_missing <- function(num_samples, num_genes, missing_frac=0.1) {
-  gene_exp <- simulate_gene_expression(num_samples, num_genes)
-  missing <- matrix(
-    rbinom(num_samples*num_genes, 1, missing_frac)==1,
-    nrow=num_genes
-  )
-  gene_exp[missing] <- NA
-  return(gene_exp)
 }
