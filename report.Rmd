@@ -39,7 +39,7 @@ sum(less_than_zero(x))
 
 We sometimes have to write tests that check for more complex criteria. For
 example, we might be interested in knowing how many elements in a vector fall
-within a closed interval, that is are greater than some value $a$ and less than
+within an open interval, that is are greater than some value $a$ and less than
 $b$. The `is_between(x, a, b)` should return a logical vector that is `TRUE`
 when an element is strictly between values `a` and `b`, and `FALSE` otherwise.
 

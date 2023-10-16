@@ -11,14 +11,14 @@
 #' @export
 #'
 #' @examples
-#' is_less_than_0(-1)
+#' less_than_zero(-1)
 #' [1] TRUE
-#' is_less_than_0(10)
+#' less_than_zero(10)
 #' [1] FALSE
-#' is_less_than_0(c(-1,0,1,2,3,4))
+#' less_than_zero(c(-1,0,1,2,3,4))
 #' [1] TRUE FALSE FALSE FALSE FALSE FALSE
-is_less_than_0 <- function(x) {
-
+less_than_zero <- function(x) {
+    return(NULL)
 }
 
 #' Evaluate whether the argument is between two numbers
@@ -44,7 +44,7 @@ is_less_than_0 <- function(x) {
 #' [2,]  TRUE FALSE FALSE
 #' [3,] FALSE FALSE FALSE
 is_between <- function(x, a, b) {
-
+    return(NULL)
 }
 
 #' Return the values of the input vector that are not NA
@@ -61,26 +61,26 @@ is_between <- function(x, a, b) {
 #' rm_na(x)
 #' [1] 1 2 3
 rm_na <- function(x) {
-
+    return(NULL)
 }
 
-#' Calculate the minimum of each row of a matrix
+#' Calculate the median of each row of a matrix
 #'
 #' Given the matrix x with n rows and m columns, return a numeric vector of
-#' length n that contains the minimum value of each row of x
+#' length n that contains the median value of each row of x
 #'
-#' @param x (numeric matrix): matrix to compute minumum along rows
+#' @param x (numeric matrix): matrix to compute median along rows
 #'
-#' @return (numeric vector) vector containing minimum row values
+#' @return (numeric vector) vector containing median row values
 #' @export
 #'
 #' @examples
 #' m <- matrix(1:9, nrow=3, byrow=T)
-#' row_mins(m)
+#' row_medians(m)
 #' [1] 1 4 7
 #' 
-row_mins <- function(x) {
-
+row_medians <- function(x) {
+    return(NULL)
 }
 
 #' Evaluate each row of a matrix with a provided function
@@ -105,7 +105,7 @@ row_mins <- function(x) {
 #' summarize_rows(m, mean)
 #' [1] 2 5 8
 summarize_rows <- function(x, fn, na.rm=FALSE) {
-
+    return(NULL)
 }
 
 #' Summarize matrix rows into data frame
@@ -120,7 +120,7 @@ summarize_rows <- function(x, fn, na.rm=FALSE) {
 #'   * max - maximum value
 #'   * num_lt_0 - the number of values less than 0
 #'   * num_btw_1_and_5 - the number of values between 1 and 5
-#'   * num_na - the number of missing (NA) values
+#'   * num_na - the number of missing (NA) values (ignoring value of na.rm)
 #'
 #' @param x (numeric matrix): matrix to evaluate the function along rows
 #' @param na.rm (logical) OPTIONAL: a logical evaluating to `TRUE` or `FALSE`
@@ -145,5 +145,22 @@ summarize_rows <- function(x, fn, na.rm=FALSE) {
 #' 3 -0.09040182 1.027559 -0.02774705 -3.026888 2.353087      130              54      0
 #' 4  0.09518138 1.030461  0.11294781 -3.409049 2.544992       90              72      0
 summarize_matrix <- function(x, na.rm=FALSE) {
+    return(NULL)
+}
 
+# ------------ Helper Functions Used By Assignment, You May Ignore ------------
+sample_normal <- function(n, mean=0, sd=1) {
+    return(NULL)
+}
+
+sample_normal_w_missing <- function(n, mean=0, sd=1, missing_frac=0.1) {
+    return(NULL)
+}
+
+simulate_gene_expression <- function(num_samples, num_genes) {
+    return(NULL)
+}
+
+simulate_gene_expression_w_missing <- function(num_samples, num_genes, missing_frac=0.1) {
+    return(NULL)
 }
