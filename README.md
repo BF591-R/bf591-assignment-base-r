@@ -6,6 +6,11 @@
 This assignment will focus on basic functions of R with an emphasis on
 working with base R data structures and functional programming patterns.
 
+### Required Readings
+
+Please read sections 5.3 through 5.10 in the textbook. Section 5.3 starts here
+
+
 ### Learning Objectives and Skill List
 
 - Understand how vector, matrix, and data frame data structures operate in R
@@ -16,7 +21,8 @@ working with base R data structures and functional programming patterns.
 
 ### Instructions
 
-Please use the github classroom link to create your own repo for this assignment.
+Please use the github classroom link provided on blackboardto create your own repo
+for this assignment.
 
 The project is laid out as such:  
 
