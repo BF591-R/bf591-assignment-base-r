@@ -8,7 +8,7 @@ working with base R data structures and functional programming patterns.
 
 ### Required Readings
 
-Please read sections 5.3 through 5.10 in the textbook. Section 5.3 starts here
+Please read sections 5.3 through 5.10 in the textbook. Section 5.3 starts [here](https://bu-bioinfo.github.io/r-for-biological-sciences/prog-basics.html#prog-r-syntax)
 
 
 ### Learning Objectives and Skill List
