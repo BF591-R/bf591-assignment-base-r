@@ -1,13 +1,13 @@
 # ----------------------- Helper Functions to Implement ------------------------
 
-#' Evaluate whether the argument is less than 2
+#' Evaluate whether the argument is less than zero
 #'
-#' Returns TRUE if the numeric argument x is a prime number, otherwise returns
+#' Returns TRUE if the numeric argument x is less than zero, otherwise returns
 #' FALSE
 #'
 #' @param x (numeric): the numeric value(s) to test
 #'
-#' @return logical value or vector indicating whether the numeric argument is less than 2
+#' @return logical value or vector indicating whether the numeric argument is less than 0
 #' @export
 #'
 #' @examples
