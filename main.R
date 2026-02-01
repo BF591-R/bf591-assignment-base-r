@@ -148,19 +148,3 @@ summarize_matrix <- function(x, na.rm=FALSE) {
     return(NULL)
 }
 
-# ------------ Helper Functions Used By Assignment, You May Ignore ------------
-sample_normal <- function(n, mean=0, sd=1) {
-    return(NULL)
-}
-
-sample_normal_w_missing <- function(n, mean=0, sd=1, missing_frac=0.1) {
-    return(NULL)
-}
-
-simulate_gene_expression <- function(num_samples, num_genes) {
-    return(NULL)
-}
-
-simulate_gene_expression_w_missing <- function(num_samples, num_genes, missing_frac=0.1) {
-    return(NULL)
-}
